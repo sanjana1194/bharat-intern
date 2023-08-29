@@ -1,45 +1,249 @@
-body {
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background: linear-gradient(to left bottom, lightgreen, lightblue);
-    font-family: monospace, sans-serif;
-    color: darkcyan;
+* { margin: 0; padding: 0; } 
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');@font-face {
+    font-family: netflix-sans-regular;
+    src: url("../font/Bebas-Neue-Regular");
 }
-.container {
-    background: rgba(255,255,255,0.3);
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-    width: 85%;
-    max-width: 450px;
-    min-width: 350px;
+
+body{
+    padding: 0px;
+    margin: 0px;
+    overflow-y:scroll;
+    background-color: #342f2f;
+}
+.root{
+    width:1300px;
+    height:600px;
+    background-image:radial-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.8)), url("https://assets.nflxext.com/ffe/siteui/vlv3/00103100-5b45-4d4f-af32-342649f1bda5/64774cd8-5c3a-4823-a0bb-1610d6971bd4/IN-en-20230821-popsignuptwoweeks-perspective_alpha_website_medium.jpg");
+    background-repeat: no-repeat;
+    background-size:auto;
+    background-position:center;
+}
+.navbar{
+    height: 10vh;
+    padding-top: 1%;
+    padding-left: 2vw;
+    padding-right: 4vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.img-logo{
+    width:14%;
+    color:#e50914;   
+}
+.btn-sign-in{
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 5px;
+    background-color:#e50914;
+    color: white;
+    cursor: pointer;
+    width: fit-content;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.main-container{
+    width: 100%;
+    height: 90vh;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
+
 }
-.heading {
-    font-size: 32px;
+.main-titles-container{
+    width: 50%;
+    text-align: center;
+    color:white;
+    line-height: 1.1;
 }
-.temp-container {
-    width: 100%;
-    padding: 15px;
-    font-weight: bold;
-    font-size: 18px;
+.main-title{
+    font-family: Arial, Helvetica, sans-serif;
+    font: weight 50px;
+    font-size: 15em;
+
 }
-input {
-    width: 220px;
-    font-family: monospace;
-    float: right;
-    padding: 5px;
+.main-subtitle{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    margin-bottom: 30px;
+}
+.main-call-to-action{
+    font-family: Arial, Helvetica, sans-serif;
+    font: 1.2em;
+}
+.main-email-container{
+    width:55%;
+    height: fit-content;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-spacing: 10px;
+}
+.main-email-container-input{
     outline: none;
-    background: rgba(255,255,255,0.3);
-    border-color: rgba(255,255,255,0.6);
-    color: darkgreen;
-    font-size: 18px;
+    border: none;
+    padding: 20px 10px;
+    font-size: 1em;
 }
-input::placeholder {
-    color: darkgray;
+.btn-get-started{
+    cursor: pointer;
+    padding: 18px 32px;
+    font-family: Arial, Helvetica, sans-serif;
+    height:fit-content;
+    background-color: #e50914;
+    color: white;
+    font-size: 1.4em;
+    text-transform: uppercase;
+    text-align: center;
 }
+.btn-get-started:hover{
+    background-color: #ff0b18;
+}
+.root1{
+    margin-block-start: 15px;
+}
+.main{
+    background-color: black;
+}
+.main1{
+    color:white;
+    padding-top: 170px;
+   padding-left: 160px;
+   padding-bottom: 170px;
+}
+.h1{
+    font-weight: 100;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:50px;
+    padding-top: 90px;
+    font: weight 10px;
+    color: white;
+}
+.h3{
+    padding-top: 15px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 30;
+    color: white;
+
+}
+.img1{
+    display: flex;
+    flex-direction: row;
+}
+.img2{
+    margin-left: 200px;
+    height: 250px;
+}
+
+.main3{
+    background-color: black;
+    
+}
+.flex1{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 170px;
+}
+
+.faq {
+    padding: 100px 30px;
+    padding-bottom: 100px;
+  }
+  
+  .faq-wrapper {
+    max-width: 900px;
+    margin: auto;
+    font-size: 1.3rem;
+  }
+  
+  .faq h2 {
+    text-align: center;
+  }
+  
+  .faq-title {
+    display: block;
+    padding: 20px;
+    background: #303030;
+    text-decoration: none;
+    margin: 5px 0;
+    position: relative;
+    color: white;
+  }
+  
+  .faq-title::after {
+    content: "+";
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    font-size: 2rem;
+    line-height: 2rem;
+    margin-top: -1rem;
+    font-weight: bold;
+  }
+  
+  .faq-item__content {
+    display: none;
+    padding: 20px;
+    background: #303030;
+    margin: 3px 0;
+    color: white;
+    font-weight: 30;
+  }
+  
+  .faq-item__content:target {
+    display: block;
+  }
+  .h2{
+    color: white;
+  }
+  .footer1{
+    text-decoration: underline;
+    color: whitesmoke;
+    padding-top: 100px;
+  }
+  .ul1{
+    padding-left: 200px;
+    list-style: none;
+    float: left;
+    font-size: large;
+
+  }
+  .footer2{
+    text-decoration: underline;
+    color: whitesmoke;
+    padding-top: 10px;
+  }
+  .footer3{
+    text-decoration: underline;
+    color: whitesmoke;
+    padding-top: 10px;
+    padding-bottom: 50px;
+  }
+  .ul2{
+    padding-left: 100px;
+    list-style: none;
+    float: left;
+    font-size: large;
+}
+  .ul3{
+    padding-left: 100px;
+    list-style: none;
+    float: left;
+    font-size: large;
+
+  }
+  span{
+    text-decoration: underline;
+    color: whitesmoke;
+  }
+  .footer4{
+    padding-left: 120px;
+    color: whitesmoke;
+    padding-top: 45px;
+  }
